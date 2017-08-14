@@ -1,4 +1,4 @@
-package io._2_iterating;
+package io.collections._2_iterating;
 
 import io.collections.Product;
 
@@ -23,18 +23,18 @@ public class CollectionsConcepts
         products.add(window);
 
         // Using Iterator
-                final Iterator<Product> productIterator = products.iterator();
-                while (productIterator.hasNext()) {
-                    Product product = productIterator.next();
-                    if (product.getWeight() > 20)
-                    {
-                        System.out.println(product);
-                    }
-                    else
-                    {
-                        productIterator.remove();
-                    }
-                }
+        final Iterator<Product> productIterator = products.iterator();
+        while (productIterator.hasNext()) {
+            Product product = productIterator.next();
+            if (product.getWeight() > 20)
+            {
+                System.out.println(product);
+            }
+            else
+            {
+                productIterator.remove();
+            }
+        }
         System.out.println(products.size());
         System.out.println(products.isEmpty());
         System.out.println(products.contains(window));
@@ -52,11 +52,11 @@ public class CollectionsConcepts
 
 
 
-        // Since Java 5, use For-each loop
-        // these are clean but iterator supports extra functionality.
-        //        for (Product product : products)
-        //        {
-        //            System.out.println(product);
-        //        }
+        /* Since Java 5, use For-each loop
+         these are clean but iterator supports extra functionality.
+                for (Product product : products)
+                {
+                    System.out.println(product);
+                }*/
     }
 }
