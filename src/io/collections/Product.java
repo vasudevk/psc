@@ -4,7 +4,6 @@ import java.util.Comparator;
 import java.util.Objects;
 
 import static java.util.Comparator.comparing;
-import static java.util.Comparator.comparingInt;
 
 /**
  * Created by Vasudev on 7/24/2017.
@@ -27,10 +26,13 @@ public class Product {
     // The below method also provides same functionality as above comparingInt
     //            comparingInt((Product p) -> p.getWeight()).thenComparingInt((Product p) -> p.getWeight());
 
+    private final int id;
     private final String name;
     private final int weight;
 
-    public Product(String name, int weight) {
+
+    public Product(int id, String name, int weight) {
+        this.id = id;
         this.name = name;
         this.weight = weight;
     }
@@ -41,6 +43,11 @@ public class Product {
 
     public int getWeight() {
         return weight;
+    }
+
+    public int getId()
+    {
+        return id;
     }
 
     @Override
