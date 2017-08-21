@@ -3,6 +3,7 @@ package io.collections._3_lists;
 import io.collections.Product;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
@@ -12,6 +13,9 @@ public class Shipment implements Iterable<Product> {
     public static final int PRODUCT_NOT_PRESENT = -1;
 
     private final List<Product> products = new ArrayList<>();
+
+    private List<Product> lightVanProducts;
+    private List<Product> heavyVanProducts;
 
     public void add(Product product) {
         products.add(product);
@@ -28,16 +32,35 @@ public class Shipment implements Iterable<Product> {
 
     public void prepare() {
 
-        //
+        // Sorting by weight
+        products.sort(Product.BY_WEIGHT);
 
+        // Finding the index of products that require Heavy Van
+        int splitPoint = findSplitPoint();
+
+        // Assign the views of the product list for Heavy & Light Vans
+        lightVanProducts = products.subList(0, splitPoint);
+        heavyVanProducts = products.subList(splitPoint, products.size());
+
+    }
+
+    private int findSplitPoint() {
+
+        for (int i = 0; i < products.size(); i++) {
+            final Product product = products.get(i);
+            if (product.getWeight() > LIGHT_VAN_MAX_WEIGHT) {
+                return i;
+            }
+        }
+        return 0;
     }
 
     public List<Product> getHeavyVanProducts() {
-        return null;
+        return heavyVanProducts;
     }
 
     public List<Product> getLightVanProducts() {
-        return null;
+        return lightVanProducts;
     }
 
     @Override

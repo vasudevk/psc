@@ -1,8 +1,10 @@
 package io.collections._3_lists;
 
 
+import io.collections.Product;
 import org.junit.Test;
 
+import static io.collections.Product.BY_WEIGHT;
 import static io.collections._3_lists.ProductFixtures.door;
 import static io.collections._3_lists.ProductFixtures.floorPanel;
 import static io.collections._3_lists.ProductFixtures.window;
@@ -46,6 +48,8 @@ public class ShipmentTest {
         shipment.add(door);
         shipment.add(window);
         shipment.add(floorPanel);
+
+        System.out.println(Product.BY_WEIGHT);
 
         shipment.prepare();
 
