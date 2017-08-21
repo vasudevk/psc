@@ -4,10 +4,9 @@ package io.collections._3_lists;
 import io.collections.Product;
 import org.junit.Test;
 
-import static io.collections.Product.BY_WEIGHT;
-import static io.collections._3_lists.ProductFixtures.door;
-import static io.collections._3_lists.ProductFixtures.floorPanel;
-import static io.collections._3_lists.ProductFixtures.window;
+import static io.collections.ProductFixtures.door;
+import static io.collections.ProductFixtures.floorPanel;
+import static io.collections.ProductFixtures.window;
 import static org.hamcrest.Matchers.contains;
 import static org.junit.Assert.assertThat;
 

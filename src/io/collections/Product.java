@@ -1,6 +1,7 @@
 package io.collections;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 import static java.util.Comparator.comparing;
 import static java.util.Comparator.comparingInt;
@@ -19,8 +20,12 @@ public class Product {
 //        }
 //    };
 
-    public static  final Comparator<Product> BY_WEIGHT =
-            comparingInt((Product p) -> p.getWeight()).thenComparingInt((Product p) -> p.getWeight());
+    public static final Comparator<Product> BY_NAME = comparing(Product::getName);
+
+    public static final Comparator<Product> BY_WEIGHT = comparing(Product::getWeight);
+
+    // The below method also provides same functionality as above comparingInt
+    //            comparingInt((Product p) -> p.getWeight()).thenComparingInt((Product p) -> p.getWeight());
 
     private final String name;
     private final int weight;
@@ -46,4 +51,19 @@ public class Product {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Product product = (Product) o;
+
+        if (weight != product.weight) return false;
+        return Objects.equals(name, product.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, weight);
+    }
 }
