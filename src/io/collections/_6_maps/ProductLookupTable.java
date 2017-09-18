@@ -1,6 +1,5 @@
 package io.collections._6_maps;
 
-import io.collections.Product;
 
 public interface ProductLookupTable {
 
