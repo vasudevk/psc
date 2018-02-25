@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f0ee927-7231-4a06-913e-f45f7e1a6276" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/SCJP6.pdf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/io/demo/Demo_.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/io/demo/Demo_Overloading.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/io/demo/Model.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/io/demo/Demo_.java" afterPath="$PROJECT_DIR$/src/io/demo/Demo_.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Demo_Overloading.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Demo_Overloading.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/io/demo/Demo_Overloading.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,11 +43,21 @@
       <file leaf-file-name="Demo_.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/io/demo/Demo_.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            <state relative-caret-position="684">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/io/demo/Model.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,9 +115,11 @@
         <option value="$PROJECT_DIR$/src/io/collections/_6_maps/ProductFixtures.java" />
         <option value="$PROJECT_DIR$/src/io/collections/_6_maps/ViewsOverMaps.java" />
         <option value="$PROJECT_DIR$/src/io/collections/_6_maps/Java8Enhancements.java" />
-        <option value="$PROJECT_DIR$/src/io/demo/Demo_Overloading.java" />
         <option value="$PROJECT_DIR$/src/io/demo/Demo_Serialization.java" />
+        <option value="$PROJECT_DIR$/src/io/demo/Demo_Overloading.java" />
+        <option value="$PROJECT_DIR$/src/io/demo/Hash.java" />
         <option value="$PROJECT_DIR$/src/io/demo/Demo_.java" />
+        <option value="$PROJECT_DIR$/src/io/demo/Model.java" />
       </list>
     </option>
   </component>
@@ -211,13 +222,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Demo_Overloading">
+  <component name="RunManager" selected="Application.Demo_">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="Demo_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="io.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="io.demo.Demo_" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="PS-Collections" />
+      <envs />
     </configuration>
     <configuration name="Demo_Overloading" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -308,31 +338,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="ProductCatalogueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="io.collections._4_sets.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="PS-Collections" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="io.collections._4_sets" />
-      <option name="MAIN_CLASS_NAME" value="io.collections._4_sets.ProductCatalogueTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -457,19 +462,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ProductCatalogueTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.LookupTableComparison" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ViewsOverMaps" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Java8Enhancements" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Demo_Overloading" />
+      <item index="0" class="java.lang.String" itemvalue="Application.LookupTableComparison" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ViewsOverMaps" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Java8Enhancements" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Demo_Overloading" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Demo_" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Demo_Overloading" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Java8Enhancements" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ViewsOverMaps" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LookupTableComparison" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ProductCatalogueTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Demo_" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Demo_Overloading" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Java8Enhancements" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ViewsOverMaps" />
+        <item index="4" class="java.lang.String" itemvalue="Application.LookupTableComparison" />
       </list>
     </recent_temporary>
   </component>
@@ -486,7 +491,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1500881929205</updated>
-      <workItem from="1519593507032" duration="2262000" />
+      <workItem from="1519593507032" duration="5306000" />
     </task>
     <task id="LOCAL-00001" summary="_3_Lists">
       <created>1502727580151</created>
@@ -516,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503296186393</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Java Demo">
+      <created>1519597931425</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1519597931425</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -552,7 +564,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2262000" />
+    <option name="totallyTimeSpent" value="5306000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,27 +660,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/java/util/Iterator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/java-hamcrest-2.0.0.0.jar!/org/hamcrest/Matchers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="334" column="53" lean-forward="false" selection-start-line="334" selection-start-column="53" selection-end-line="334" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.ideaLibSources/java-hamcrest-2.0.0.0-sources.jar!/org/hamcrest/Matchers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/java/util/function/Function.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -807,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3465">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/java/util/List.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -933,28 +917,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/demo/Demo_.java">
+    <entry file="file://$PROJECT_DIR$/src/io/demo/Demo_Serialization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3087">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/demo/Demo_Overloading.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/java/util/Vector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-609">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/demo/Hash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/io/demo/Demo_.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/demo/Demo_Overloading.java">
+    <entry file="file://$PROJECT_DIR$/src/io/demo/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/io/demo/Demo_Serialization.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
